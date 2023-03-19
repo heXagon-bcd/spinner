@@ -1,7 +1,7 @@
 process.stdout.write('hello from spinner1.js... \rheyyy\n');
 
 setTimeout(() => {
-  process.stdout.write(`\r|     `);
+  process.stdout.write(`\r|     `);//spaces becasuse the cursor needs to move far away enough from the animation
 },100)
 
 setTimeout(() => {
@@ -15,3 +15,6 @@ setTimeout(() => {
   // Need to escape the backslash since it's a special character.
   process.stdout.write('\r\\   '); 
 }, 700);
+setTimeout(() => {
+  process.stdout.write(`\r|     `);
+},900)
